@@ -30,7 +30,11 @@
     .feed-form {
         padding-left: 10px;
     }
-    }     
+    .next {
+        right: -10px;
+        left: auto;
+    }
+    }  
 
 @media (max-width: 992px) {
     .header {
@@ -61,8 +65,18 @@
     .feed-form {
         font-size: 18px;
     }
-
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .reviews {
+        &__img {
+            margin-left: 20px;
+        }
+    }
 }
+
 @media (max-width: 767px) {
     .advantages {
         &__wrapper {
@@ -98,6 +112,20 @@
     .button_submit {
         width: auto;
     }
+    .carousel {
+        &__inner {
+            width: 550px;
+            img {
+                max-width: 550px;
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 30%;
+        }
+    }
+
 }
 @media (max-width: 575px) {
     .header {
@@ -149,5 +177,45 @@
     }
     .button_submit {
         width: 210px;
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 320px;
+            img {
+                max-width: 320px;
+            }
+        }
+    }
+    .reviews {
+        &__item {
+            flex-direction: column;
+        }
+        &__text {
+            margin-top: 15px;
+            text-align: center;
+        }
+        &__img { 
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        &__info {
+            width: 100%;
+        }
+    }
+    .modal {
+        width: 300px;
+        &__close {
+            right: -1px;
+        }
     }
 }

@@ -21,6 +21,12 @@
     &__img{
         height: 70px;
         width: 70px;
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
     }
     &__subtitle{
         margin-top: 35px;
